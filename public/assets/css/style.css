@@ -1,0 +1,68 @@
+@media (min-width: 768px) {
+    body {
+        background-image: url(../img/img_home.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        background-image: url(../img/img_home.jpg);
+        background-repeat: no-repeat;
+        background-size: 140% 110%;
+        background-position: center center;
+    }
+}
+
+.credit {
+    background: rgba(0, 0, 0, 0.75);
+    font-size: 1.3em;
+    color: whitesmoke;
+    padding: 1em;
+    border-radius: 0.5em;
+    align-items: center;
+}
+
+.credit a {
+    color: turquoise;
+    transition: 1s;
+}
+
+.credit a:hover {
+    color: white;
+    text-shadow: 0 0 8px white;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1; /* Certifique-se de que o modal esteja na parte superior */
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* Certifique-se de que o conteúdo do modal esteja acima do fundo */
+  }
+  
+  .close {
+    float: right;
+    cursor: pointer;
+  }
+
+  .botao-pequeno {
+    width: 100px;
+    height: 30px;
+  }
